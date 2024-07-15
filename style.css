@@ -183,6 +183,10 @@ nav {
     animation: color-swap 1s infinite alternate;
 }
 
+.inton {
+    color: var(--tertiary-color);
+}
+
 .link {
     color: var(--tertiary-color);
 }
@@ -262,8 +266,65 @@ nav {
     color: var(--primary-color);
 }
 
-#about {
-    margin: 2rem;
+#chapter {
+    margin: 8vh 2rem;
+}
+
+#chapter hr {
+    width: 5%;
+    max-width: 25%;;
+}
+
+.sample-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.sample-container h3, .sample-container p {
+    margin-bottom: 5rem;
+}
+
+.sample-container > p {
+    max-width: 500px;
+    margin-inline: auto;
+    text-wrap: balance;
+    position: relative;
+}
+
+.sample-container > p::before {
+    content: '★';
+    position: absolute;
+    font-size: 3rem;
+    left: calc(50% - 1.5rem);
+    bottom: 100%;
+}
+
+.sample-container > p::after {
+    content: '★';
+    position: absolute;
+    font-size: 3rem;
+    left: calc(50% - 1.5rem);
+    top: 100%;
+}
+
+.sample {
+    text-align: justify;
+}
+
+.sample > p:not(:first-child) {
+    text-indent: 2rem;
+}
+
+.sample > p:not(:last-child) {
+    margin-bottom: 3rem;
+}
+
+.sample p:first-child::first-letter {
+    font-size: 7rem;
+    font-weight: bold;
+    float: left;
+    padding-right: 1rem;
+    line-height: 1;
 }
 
 section {
@@ -658,7 +719,11 @@ footer::before {
     .menu {
         flex-wrap: wrap;
         justify-content: center;
-        margin: 1.5rem;
+        margin: 3rem 1.5rem;
+    }
+
+    #chapter {
+        margin: 0 2rem;
     }
 
     .overview {

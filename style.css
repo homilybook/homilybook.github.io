@@ -201,7 +201,7 @@ nav {
 .overview {
     display: flex;
     align-items: center;
-    margin: 5rem 15rem 0;
+    margin: 5rem 13rem 0;
     gap: 7rem;
 }
 
@@ -329,13 +329,14 @@ nav {
 
 section {
     scroll-margin-top: 1rem;
+    padding-inline: 2rem;
 }
 
 .section-title {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2rem 2rem;
+    margin-block: 2rem;
 }
 
 hr {
@@ -729,7 +730,7 @@ footer::before {
     .overview {
         flex-direction: column;
         gap: 5rem;
-        margin: 2.5rem 2rem 0;
+        margin: 2.5rem 0;
     }
 
     .overview figure {
